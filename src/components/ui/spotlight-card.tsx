@@ -75,19 +75,12 @@ const GlowCard: React.FC<GlowCardProps> = ({
       '--border-size': 'calc(var(--border, 2) * 1px)',
       '--spotlight-size': 'calc(var(--size, 150) * 1px)',
       '--hue': 'calc(var(--base) + (var(--xp, 0) * var(--spread, 0)))',
-      backgroundImage: `radial-gradient(
-        var(--spotlight-size) var(--spotlight-size) at
-        calc(var(--x, 0) * 1px)
-        calc(var(--y, 0) * 1px),
-        hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
-      )`,
       backgroundColor: 'var(--backdrop, transparent)',
       backgroundSize: 'calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)))',
       backgroundPosition: '50% 50%',
       backgroundAttachment: 'fixed',
       border: 'var(--border-size) solid var(--backup-border)',
       position: 'relative' as const,
-      touchAction: 'none' as const,
     } as React.CSSProperties;
 
     // Add width and height if provided
@@ -102,11 +95,20 @@ const GlowCard: React.FC<GlowCardProps> = ({
   };
 
   const beforeAfterStyles = `
-    [data-glow]::before,
-    [data-glow]::after {
-      pointer-events: none;
-      content: "";
-      position: absolute;
+    @media (hover: hover) and (pointer: fine) {
+      [data-glow] {
+        background-image: radial-gradient(
+          var(--spotlight-size) var(--spotlight-size) at
+          calc(var(--x, 0) * 1px)
+          calc(var(--y, 0) * 1px),
+          hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
+        );
+      }
+      [data-glow]::before,
+      [data-glow]::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
       inset: calc(var(--border-size) * -1);
       border: var(--border-size) solid transparent;
       border-radius: calc(var(--radius) * 1px);
@@ -151,9 +153,10 @@ const GlowCard: React.FC<GlowCardProps> = ({
       border: none;
     }
     
-    [data-glow] > [data-glow]::before {
-      inset: -10px;
-      border-width: 10px;
+      [data-glow] > [data-glow]::before {
+        inset: -10px;
+        border-width: 10px;
+      }
     }
   `;
 
