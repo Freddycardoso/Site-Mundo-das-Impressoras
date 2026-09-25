@@ -18,7 +18,7 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-[100dvh] flex flex-col bg-slate-100 text-slate-800 selection:bg-blue-900 selection:text-white relative font-sans">
+    <div className="min-h-[100dvh] flex flex-col bg-slate-100 text-blue-950 selection:bg-blue-900 selection:text-white relative font-sans">
       {/* Top Bar Navigation (Fluid Island) */}
       <Navbar />
 

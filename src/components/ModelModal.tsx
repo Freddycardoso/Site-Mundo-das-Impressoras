@@ -39,7 +39,7 @@ export const ModelModal: React.FC<ModelModalProps> = ({ isOpen, onClose, categor
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-lg text-slate-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+          className="absolute top-4 right-4 p-2 rounded-lg text-blue-900/40 hover:text-blue-800 hover:bg-blue-50 transition-colors"
           aria-label="Fechar"
         >
           <X className="w-5 h-5" />
@@ -50,10 +50,10 @@ export const ModelModal: React.FC<ModelModalProps> = ({ isOpen, onClose, categor
           <div className="text-xs font-mono text-blue-600 font-semibold tracking-wider uppercase">
             Cotação Direta WhatsApp
           </div>
-          <h3 id="modal-title" className="text-xl font-bold font-display text-slate-900">
+          <h3 id="modal-title" className="text-xl font-bold font-display text-blue-950">
             {category.title}
           </h3>
-          <p className="text-xs sm:text-sm text-slate-500">
+          <p className="text-xs sm:text-sm text-blue-950/60">
             Informe o modelo da sua impressora para conferirmos a compatibilidade exata em nosso estoque de Passos-MG.
           </p>
         </div>
