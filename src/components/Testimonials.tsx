@@ -75,7 +75,7 @@ export const Testimonials = () => {
           </div>
         }
       >
-        <div className="h-full w-full bg-[#202124] text-[#E8EAED] font-sans flex flex-col md:flex-row overflow-hidden rounded-2xl">
+        <div className="h-full w-full bg-[#202124] text-[#E8EAED] font-sans flex flex-col md:flex-row overflow-y-auto md:overflow-hidden overflow-x-hidden rounded-2xl">
           
           {/* Sidebar / Top Info */}
           <div className="w-full md:w-[360px] flex-shrink-0 p-6 md:p-8 border-b md:border-b-0 md:border-r border-[#3C4043] flex flex-col bg-[#202124]">
@@ -107,7 +107,7 @@ export const Testimonials = () => {
           </div>
 
           {/* Reviews List */}
-          <div className="flex-1 overflow-y-auto p-0 md:p-4 bg-[#202124]" style={{ scrollbarWidth: 'thin', scrollbarColor: '#5F6368 transparent' }}>
+          <div className="flex-1 overflow-visible md:overflow-y-auto p-0 md:p-4 bg-[#202124]" style={{ scrollbarWidth: 'thin', scrollbarColor: '#5F6368 transparent' }}>
             
             <div className="sticky top-0 bg-[#202124] z-10 px-6 py-4 md:px-4 border-b border-[#3C4043] flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 mb-4">
                <div className="text-sm text-[#9AA0A6]">Ordenar por</div>
