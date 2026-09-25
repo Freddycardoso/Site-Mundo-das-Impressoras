@@ -1,0 +1,6 @@
+{
+  "name": "Mundo das Impressoras - Outsourcing & Suprimentos",
+  "description": "Locação e outsourcing de impressoras para empresas, venda de toners, cartuchos e assistência técnica especializada em Passos-MG e região.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
