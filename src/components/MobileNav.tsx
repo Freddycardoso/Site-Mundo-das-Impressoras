@@ -18,7 +18,7 @@ export const MobileNav: React.FC = () => {
       <button
         type="button"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="relative w-10 h-10 flex flex-col items-center justify-center rounded-full bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.08] text-[#0a2540] hover:bg-[#0a2540]/[0.08] transition-all duration-200 active:scale-[0.95] cursor-pointer"
+        className="relative w-10 h-10 flex flex-col items-center justify-center rounded-full bg-white/10 border border-white/15 text-white hover:bg-white/20 transition-all duration-200 active:scale-[0.95] cursor-pointer"
         aria-label={mobileMenuOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
         aria-expanded={mobileMenuOpen}
       >
@@ -41,7 +41,7 @@ export const MobileNav: React.FC = () => {
 
       {/* Floating Luminous Sheet Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-x-4 top-20 z-50 rounded-3xl bg-white/95 backdrop-blur-2xl border border-[#0a2540]/[0.08] shadow-[0_25px_60px_rgba(10,37,64,0.18)] p-6 animate-in fade-in zoom-in-95 duration-200 ease-[cubic-bezier(0.32,0.72,0,1)]">
+        <div className="fixed inset-x-4 top-20 z-50 rounded-3xl bg-[#0a2540]/95 backdrop-blur-2xl border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.45)] p-6 animate-in fade-in zoom-in-95 duration-200 ease-[cubic-bezier(0.32,0.72,0,1)]">
           <nav className="flex flex-col space-y-2">
             {navLinks.map((link, idx) => (
               <a
@@ -49,20 +49,20 @@ export const MobileNav: React.FC = () => {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 style={{ animationDelay: `${idx * 40}ms` }}
-                className="flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#425466] hover:text-[#0a2540] hover:bg-[#0a2540]/[0.04] rounded-2xl transition-all duration-150 active:scale-[0.98]"
+                className="flex items-center justify-between px-4 py-3 text-sm font-semibold text-slate-200 hover:text-white hover:bg-white/10 rounded-2xl transition-all duration-150 active:scale-[0.98]"
               >
                 <span>{link.label}</span>
-                <span className="text-xs text-[#0052cc] opacity-70">→</span>
+                <span className="text-xs text-[#0284c7] font-bold">→</span>
               </a>
             ))}
 
-            <div className="pt-4 mt-2 border-t border-[#0a2540]/[0.06]">
+            <div className="pt-4 mt-2 border-t border-white/10">
               <a
                 href={getWhatsAppLink('Olá! Vim pelo site da Mundo das Impressoras e gostaria de falar com um consultor corporativo.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="group flex items-center justify-between w-full py-3.5 px-5 text-sm font-semibold text-white bg-[#0a2540] hover:bg-[#0052cc] rounded-2xl shadow-lg shadow-[#0a2540]/15 transition-all duration-200 active:scale-[0.97]"
+                className="group flex items-center justify-between w-full py-3.5 px-5 text-sm font-semibold text-white bg-gradient-to-r from-[#0052cc] to-[#0284c7] hover:from-[#0047b3] hover:to-[#0275b0] rounded-2xl shadow-lg shadow-[#0052cc]/25 transition-all duration-200 active:scale-[0.97]"
               >
                 <div className="flex items-center gap-2.5">
                   <MessageCircle className="w-4 h-4 text-emerald-400" />

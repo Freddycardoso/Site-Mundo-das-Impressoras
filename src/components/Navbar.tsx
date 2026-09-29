@@ -6,7 +6,7 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/60 backdrop-blur-[12px] border-b border-white/5 transition-colors">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#0a2540]/90 backdrop-blur-[12px] border-b border-white/10 transition-colors">
       <nav className="flex items-center justify-between px-4 sm:px-[5%] py-3 sm:py-4 max-w-7xl mx-auto">
         
         <a href="/" className="flex items-center group outline-none transition-transform duration-300 hover:scale-105">

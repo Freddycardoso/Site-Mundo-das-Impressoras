@@ -7,13 +7,13 @@ const ctaWhatsApp = getWhatsAppLink('Olá, vim pelo site da Mundo das Impressora
 ---
 
 <header class="fixed top-0 inset-x-0 z-50 px-4 sm:px-6 pt-3 sm:pt-5 pointer-events-none">
-  <nav class="pointer-events-auto max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-[#0a2540]/[0.08] shadow-[0_8px_30px_rgba(10,37,64,0.06)] transition-all duration-300">
+  <nav class="pointer-events-auto max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#0a2540]/95 backdrop-blur-xl border border-white/10 shadow-[0_12px_36px_rgba(10,37,64,0.35)] transition-all duration-300">
     
     <a href="/" class="flex items-center group outline-none transition-transform duration-200 hover:scale-105 active:scale-95">
       <img 
         src="/logo.png" 
         alt="Mundo das Impressoras" 
-        class="h-8 sm:h-9 w-auto object-contain drop-shadow-sm"
+        class="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.12)]"
         width="160"
         height="38"
         loading="eager"
@@ -21,17 +21,17 @@ const ctaWhatsApp = getWhatsAppLink('Olá, vim pelo site da Mundo das Impressora
     </a>
 
     {/* Desktop Navigation with Pill Hover Effect */}
-    <div class="hidden md:flex items-center gap-1 bg-[#0a2540]/[0.03] p-1 rounded-full border border-[#0a2540]/[0.04]">
-      <a href="#vitrine" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-[#425466] hover:text-[#0a2540] hover:bg-white rounded-full transition-all duration-200 shadow-none hover:shadow-sm">
+    <div class="hidden md:flex items-center gap-1 bg-white/[0.06] p-1 rounded-full border border-white/10">
+      <a href="#vitrine" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-slate-200 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200">
         Categorias & Suprimentos
       </a>
-      <a href="#outsourcing" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-[#425466] hover:text-[#0a2540] hover:bg-white rounded-full transition-all duration-200 shadow-none hover:shadow-sm">
+      <a href="#outsourcing" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-slate-200 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200">
         Outsourcing B2B
       </a>
-      <a href="#servicos" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-[#425466] hover:text-[#0a2540] hover:bg-white rounded-full transition-all duration-200 shadow-none hover:shadow-sm">
+      <a href="#servicos" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-slate-200 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200">
         Assistência Técnica
       </a>
-      <a href="#calculadora" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-[#425466] hover:text-[#0a2540] hover:bg-white rounded-full transition-all duration-200 shadow-none hover:shadow-sm">
+      <a href="#calculadora" class="px-3.5 py-1 text-xs font-semibold tracking-tight text-slate-200 hover:text-white hover:bg-white/10 rounded-full transition-all duration-200">
         Simulador ROI
       </a>
     </div>
@@ -43,7 +43,7 @@ const ctaWhatsApp = getWhatsAppLink('Olá, vim pelo site da Mundo das Impressora
         href={ctaWhatsApp}
         target="_blank"
         rel="noopener noreferrer"
-        class="group hidden sm:inline-flex items-center gap-2.5 pl-4 pr-1.5 py-1.5 text-xs font-semibold text-white bg-[#0a2540] hover:bg-[#0052cc] rounded-full border border-[#0a2540]/10 shadow-[0_4px_14px_rgba(10,37,64,0.18)] transition-all duration-200 active:scale-[0.97]"
+        class="group hidden sm:inline-flex items-center gap-2.5 pl-4 pr-1.5 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0052cc] to-[#0284c7] hover:from-[#0047b3] hover:to-[#0275b0] rounded-full border border-white/20 shadow-[0_4px_16px_rgba(0,82,204,0.35)] transition-all duration-200 active:scale-[0.97]"
       >
         <span>Falar com Consultor</span>
         <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
