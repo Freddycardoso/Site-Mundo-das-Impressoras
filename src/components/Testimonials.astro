@@ -1,0 +1,206 @@
+---
+import { Star, MoreVertical, ThumbsUp } from 'lucide-react';
+
+const reviews = [
+  {
+    name: "Jaqueline Costa Goulart",
+    time: "5 meses atrás",
+    rating: 5,
+    text: "",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+    photos: 1,
+    reviewsCount: 2,
+    localGuide: false,
+    response: "Muito obrigado 🤩"
+  },
+  {
+    name: "Sandro Dias Batista",
+    time: "7 meses atrás",
+    rating: 5,
+    text: "Muito Bom. Fui bem atendido. Agora aguardando orçamento da impressora 🖨️",
+    avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop&crop=face",
+    localGuide: true,
+    reviewsCount: 397,
+    photos: 9502,
+    images: [
+      "/reviews/photo1.jpg",
+      "/reviews/photo3.jpg",
+      "/reviews/photo2.jpg"
+    ],
+    response: "Muito obrigado\nAgradeço muito sua avaliação"
+  },
+  {
+    name: "SANDRO Dias",
+    time: "7 meses atrás",
+    rating: 5,
+    text: "Muito bem atendido.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    localGuide: true,
+    reviewsCount: 133,
+    photos: 2243,
+    images: [
+      "/reviews/photo1.jpg",
+      "/reviews/photo2.jpg",
+      "/reviews/photo3.jpg"
+    ],
+    response: "Muito obrigado"
+  },
+  {
+    name: "Tales Teixeira",
+    time: "2 anos atrás",
+    rating: 5,
+    text: "Excelente empresa, indico a todos.",
+    avatar: "T",
+    avatarBg: "#673AB7",
+    reviewsCount: 7,
+    localGuide: false,
+    response: "Muito obrigado 🤩"
+  }
+];
+---
+
+<section class="relative py-24 bg-slate-100 overflow-hidden border-b border-blue-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Section Header */}
+    <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+      <div class="text-xs font-mono text-blue-600 font-semibold tracking-wider uppercase">
+        Avaliações Google · Satisfação Comprovada
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-display">
+        A confiança de quem já <br />
+        <span class="text-blue-600">migrou para nós</span>
+      </h2>
+      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+        Veja o que os nossos clientes dizem sobre o atendimento, qualidade e agilidade da Mundo das Impressoras.
+      </p>
+    </div>
+
+    {/* Google Reviews Card Shell */}
+    <div class="max-w-5xl mx-auto rounded-[24px] sm:rounded-[30px] border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] shadow-2xl">
+      <div class="h-full w-full bg-[#202124] text-[#E8EAED] font-sans flex flex-col md:flex-row overflow-y-auto md:overflow-hidden overflow-x-hidden rounded-2xl">
+        
+        {/* Sidebar / Top Info */}
+        <div class="w-full md:w-[360px] flex-shrink-0 p-6 md:p-8 border-b md:border-b-0 md:border-r border-[#3C4043] flex flex-col bg-[#202124]">
+          <h3 class="text-2xl font-medium text-white mb-1">Mundo das Impressoras</h3>
+          <p class="text-[#9AA0A6] text-sm mb-6">Av. Comendador Francisco Avelino Maia, 1430 - Centro, Passos - MG, 37904-017, Brasil</p>
+          
+          <div class="flex items-center gap-4 mb-8">
+            <span class="text-5xl font-normal text-white">4,8</span>
+            <div class="flex flex-col gap-1">
+              <div class="flex text-[#FBBC04]">
+                {[1,2,3,4,5].map(i => <Star key={i} class="w-5 h-5 fill-current" />)}
+              </div>
+              <span class="text-[#9AA0A6] text-sm">26 avaliações ⓘ</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="px-4 py-1.5 rounded-full bg-[#8AB4F8] text-[#202124] text-sm font-medium">Tudo</span>
+            <span class="px-4 py-1.5 rounded-full border border-[#5F6368] text-[#E8EAED] text-sm hover:bg-[#3C4043] cursor-pointer transition-colors">printer cleaning <span class="text-[#9AA0A6] ml-1">2</span></span>
+            <span class="px-4 py-1.5 rounded-full border border-[#5F6368] text-[#E8EAED] text-sm hover:bg-[#3C4043] cursor-pointer transition-colors">honesty <span class="text-[#9AA0A6] ml-1">3</span></span>
+            <span class="px-4 py-1.5 rounded-full border border-[#5F6368] text-[#E8EAED] text-sm hover:bg-[#3C4043] cursor-pointer transition-colors">company <span class="text-[#9AA0A6] ml-1">2</span></span>
+          </div>
+
+          <div class="mt-auto hidden md:block">
+            <a
+              href="https://maps.google.com/?q=Mundo+das+Impressoras+Passos+MG"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full text-center py-2.5 rounded-full border border-[#5F6368] text-[#8AB4F8] font-medium hover:bg-[#3C4043] transition-colors"
+            >
+              Avaliar no Google
+            </a>
+          </div>
+        </div>
+
+        {/* Reviews List */}
+        <div class="flex-1 max-h-[500px] overflow-y-auto p-0 md:p-4 bg-[#202124]" style="scrollbar-width: thin; scrollbar-color: #5F6368 transparent;">
+          
+          <div class="sticky top-0 bg-[#202124] z-10 px-6 py-4 md:px-4 border-b border-[#3C4043] flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 mb-4">
+             <div class="text-sm text-[#9AA0A6]">Ordenar por</div>
+             <div class="flex gap-2 overflow-x-auto pb-2 sm:pb-0 touch-pan-x" style="scrollbar-width: none;">
+                <button type="button" class="px-4 py-1.5 rounded-full border border-[#5F6368] text-[#E8EAED] text-sm whitespace-nowrap hover:bg-[#3C4043] transition-colors">Mais relevantes</button>
+                <button type="button" class="px-4 py-1.5 rounded-full bg-[#8AB4F8] text-[#202124] text-sm font-medium whitespace-nowrap">Mais recentes</button>
+                <button type="button" class="px-4 py-1.5 rounded-full border border-[#5F6368] text-[#E8EAED] text-sm whitespace-nowrap hover:bg-[#3C4043] transition-colors">Maior classificação</button>
+             </div>
+          </div>
+
+          <div class="flex flex-col gap-6 px-6 md:px-4 pb-10">
+            {reviews.map((review, idx) => (
+              <div key={idx} class="pb-6 border-b border-[#3C4043] last:border-0">
+                <div class="flex justify-between items-start mb-3">
+                  <div class="flex gap-3">
+                    {review.avatar.length === 1 ? (
+                      <div 
+                        class="w-10 h-10 rounded-full flex items-center justify-center text-white text-lg font-medium"
+                        style={{ backgroundColor: review.avatarBg || '#12B5CB' }}
+                      >
+                        {review.avatar}
+                      </div>
+                    ) : (
+                      <img src={review.avatar} alt={review.name} class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy" />
+                    )}
+                    
+                    <div class="flex flex-col">
+                      <span class="text-[#E8EAED] font-medium leading-tight">{review.name}</span>
+                      <div class="text-[#9AA0A6] text-xs mt-1 flex flex-wrap items-center gap-1">
+                        {review.localGuide && <span class="text-[#FBBC04] flex items-center gap-1"><Star class="w-3 h-3 fill-current" /> Local Guide ·</span>}
+                        {review.reviewsCount && <span>{review.reviewsCount} avaliações</span>}
+                        {review.photos && <span>· {review.photos} fotos</span>}
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="text-[#9AA0A6] hover:text-white p-1 rounded-full hover:bg-[#3C4043] transition-colors" aria-label="Mais opções"><MoreVertical class="w-5 h-5" /></button>
+                </div>
+
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="flex text-[#FBBC04]">
+                    {[...Array(review.rating)].map((_, i) => <Star key={i} class="w-3.5 h-3.5 fill-current" />)}
+                  </div>
+                  <span class="text-[#9AA0A6] text-sm">{review.time}</span>
+                </div>
+
+                {review.text && (
+                  <p class="text-[#E8EAED] text-sm md:text-base leading-relaxed mb-3">
+                    {review.text}
+                  </p>
+                )}
+
+                {review.images && (
+                  <div class="flex gap-2 overflow-x-auto pb-2 mb-2 touch-pan-x" style="scrollbar-width: none;">
+                    {review.images.map((img, i) => (
+                      <img key={i} src={img} alt="Foto da avaliação" class="h-24 w-auto rounded-lg object-cover border border-[#3C4043]" loading="lazy" />
+                    ))}
+                  </div>
+                )}
+
+                {review.response && (
+                  <div class="mt-4 bg-[#303134] rounded-xl p-4 border border-[#3C4043]">
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="w-6 h-6 rounded-full bg-[#8AB4F8] flex items-center justify-center">
+                        <span class="text-[#202124] text-xs font-bold">M</span>
+                      </div>
+                      <span class="text-[#E8EAED] text-sm font-medium">Mundo das Impressoras (proprietário)</span>
+                      <span class="text-[#9AA0A6] text-xs ml-auto">4 meses atrás</span>
+                    </div>
+                    <p class="text-[#E8EAED] text-sm pl-8 whitespace-pre-wrap">{review.response}</p>
+                  </div>
+                )}
+
+                <div class="flex items-center gap-4 mt-4 text-[#9AA0A6]">
+                  <button type="button" class="flex items-center gap-2 text-sm hover:bg-[#3C4043] px-3 py-1.5 rounded-full transition-colors border border-transparent hover:border-[#5F6368]">
+                    <ThumbsUp class="w-4 h-4" />
+                    Útil
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

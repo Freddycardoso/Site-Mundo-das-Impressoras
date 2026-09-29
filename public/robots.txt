@@ -1,4 +1,45 @@
+# ==========================================
+# Robots.txt - Mundo das Impressoras
+# Outsourcing de Impressão e Suprimentos
+# https://mundodasimpressoras.com.br
+# ==========================================
+
+# 1. Motores de Busca Tradicionais
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+User-agent: YandexBot
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+
+# 2. Motores de IA e Agentes de Busca Generativa (GEO)
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Amazonbot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Disallow: /api/
+
+# 3. Diretiva Geral (Fallback)
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Documentação Canônica e Sitemaps
 Sitemap: https://mundodasimpressoras.com.br/sitemap.xml
+# AI Search Documentation:
+# https://mundodasimpressoras.com.br/llms.txt
+# https://mundodasimpressoras.com.br/llms-full.txt

@@ -1,0 +1,17 @@
+{
+  "name": "Mundo das Impressoras - Outsourcing & Suprimentos",
+  "short_name": "Mundo Impressoras",
+  "description": "Outsourcing de Impressão B2B, venda de toners compatíveis e assistência técnica rápida em Passos - MG e região.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

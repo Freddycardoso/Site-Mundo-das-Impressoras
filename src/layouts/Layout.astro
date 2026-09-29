@@ -1,0 +1,208 @@
+---
+import '../index.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title = "Outsourcing de Impressão e Suprimentos | Mundo das Impressoras – Passos-MG",
+  description = "Reduza os custos da sua empresa com Outsourcing de Impressão. Aluguel de impressoras, toners compatíveis e assistência técnica rápida em Passos. Peça um estudo!",
+  canonicalURL = "https://mundodasimpressoras.com.br/",
+} = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://mundodasimpressoras.com.br/#localbusiness",
+      "name": "Mundo das Impressoras",
+      "alternateName": "Mundo das Impressoras - Outsourcing & Suprimentos",
+      "legalName": "Mundo das Impressoras",
+      "url": "https://mundodasimpressoras.com.br",
+      "logo": "https://mundodasimpressoras.com.br/logo.png",
+      "image": "https://mundodasimpressoras.com.br/images/fachada.png",
+      "telephone": "+55-35-99953-6494",
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Dinheiro, Cartão de Crédito, Cartão de Débito, PIX, Boleto Faturado (CNPJ)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Comendador Francisco Avelino Maia, 1430",
+        "addressLocality": "Passos",
+        "addressRegion": "MG",
+        "postalCode": "37904-017",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -20.7188,
+        "longitude": -46.6108
+      },
+      "description": "Especialistas em Outsourcing de Impressão corporativo (B2B), venda de toners compatíveis de alto rendimento, impressoras térmicas para automação e assistência técnica especializada em Passos - MG e Sudoeste Mineiro.",
+      "areaServed": [
+        { "@type": "City", "name": "Passos" },
+        { "@type": "City", "name": "Itaú de Minas" },
+        { "@type": "City", "name": "Fortaleza de Minas" },
+        { "@type": "AdministrativeArea", "name": "Sudoeste de Minas" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "26",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços e Suprimentos de Impressão",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outsourcing de Impressão Corporativo (B2B)",
+              "description": "Locação de multifuncionais com toners, manutenção preventiva e máquina backup 100% inclusos por página impressa."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Toners Compatíveis & Originais",
+              "description": "Toners 100% novos com certificação de rendimento ISO/IEC 19752 para HP, Brother, Samsung e Kyocera com até 65% de economia."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Assistência Técnica Especializada e Coleta",
+              "description": "Conserto em bancada de fusores, cabeças micropiezo, roletes tracionadores e placas lógicas com garantia de 90 dias."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mundodasimpressoras.com.br/#website",
+      "url": "https://mundodasimpressoras.com.br/",
+      "name": "Mundo das Impressoras",
+      "description": "Outsourcing de Impressão e Suprimentos em Passos - MG",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mundodasimpressoras.com.br/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O toner compatível pode danificar minha impressora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não! Nossos toners compatíveis são 100% novos de fábrica (não são recarregados), fabricados sob rigorosas normas de qualidade ISO 9001 e ISO/IEC 19752. O pó de toner tem a mesma fusão e granulação do original, garantindo nitidez e preservando a vida útil do fusor e do cilindro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o contrato de Outsourcing de Impressão para empresas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nós instalamos as impressoras ideais para o seu fluxo de trabalho sem custo de aquisição. O contrato inclui todos os toners necessários, manutenção preventiva, peças de reposição e máquina backup em caso de falha. Sua empresa só paga uma franquia mensal com valor fixo por página impressa, gerando economia de até 40%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês emitem Nota Fiscal e faturam para empresas (CNPJ)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, emitimos Nota Fiscal Eletrônica (NF-e) para todos os produtos e serviços. Para empresas cadastradas da região de Passos, disponibilizamos faturamento com boleto bancário quinzenal ou mensal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o prazo de entrega de suprimentos em Passos e região?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para Passos-MG, pedidos de itens em estoque confirmados até as 14h são entregues no mesmo dia. Para cidades vizinhas (como São Sebastião do Paraíso, Alpinópolis, Itaú de Minas), realizamos rotas programadas ou envio expresso com entrega em 24h."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a coleta para assistência técnica e conserto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Basta nos chamar no WhatsApp informando o modelo e o defeito apresentado. Se você está em Passos, agendamos a coleta do equipamento no seu local ou você pode entregar em nossa base para avaliação técnica imediata."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>{title}</title>
+    
+    {/* Favicon & Web App Manifest */}
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    {/* Primary SEO Meta Tags */}
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    {/* Open Graph / Facebook / WhatsApp */}
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Mundo das Impressoras" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://mundodasimpressoras.com.br/images/fachada.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mundo das Impressoras - Fachada e Atendimento em Passos - MG" />
+
+    {/* Twitter Cards */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Outsourcing B2B com zero custo de manutenção, suprimentos de alto rendimento e assistência técnica em Passos-MG e região." />
+    <meta name="twitter:image" content="https://mundodasimpressoras.com.br/images/fachada.png" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    {/* Google Search Console Verification Placeholder */}
+    <meta name="google-site-verification" content="INSERIR_TOKEN_SEARCH_CONSOLE" />
+
+    {/* Preconnect Fonts & Preload Critical Assets (LCP Optimization) */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/printer-hero.png" as="image" type="image/png" fetchpriority="high" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    {/* Structured Data: Schema.org Graph (LocalBusiness, WebSite, FAQPage) */}
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  </head>
+  <body class="bg-slate-100 text-blue-950 antialiased selection:bg-blue-900 selection:text-white font-sans min-h-[100dvh] flex flex-col relative">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,93 @@
+# Mundo das Impressoras - Documentação Completa para Motores de Busca e Modelos de Linguagem (GEO)
+
+## 1. Identificação Corporativa
+- **Nome Comercial:** Mundo das Impressoras
+- **Nicho de Atuação:** Outsourcing de Impressão (B2B), comércio de suprimentos de impressão (toners, tintas, bobinas, papéis especiais) e assistência técnica especializada multimarcas.
+- **Sede Física:** Av. Comendador Francisco Avelino Maia, 1430, Centro, Passos - Minas Gerais, CEP 37904-017, Brasil.
+- **Canais Oficiais:**
+  - Site: https://mundodasimpressoras.com.br/
+  - Telefone / WhatsApp: (35) 99953-6494
+  - Link WhatsApp direto: https://wa.me/5535999536494
+- **Área Geográfica de Cobertura:** Município de Passos (entrega expressa no mesmo dia e coleta presencial de equipamentos) e cidades adjacentes do Sudoeste de Minas Gerais (Itaú de Minas, Fortaleza de Minas, Alpinópolis, São Sebastião do Paraíso).
+
+---
+
+## 2. Outsourcing de Impressão Corporativo (B2B)
+O Outsourcing de Impressão da Mundo das Impressoras é um modelo contratual de locação e gestão contínua de parques de impressão projetado para eliminar custos invisíveis de manutenção e reduzir gastos operacionais em até 40%.
+
+### Pilares do Contrato de Outsourcing:
+1. **Zero Custo de Aquisição:** Equipamentos industriais de alto ciclo mensal instalados na empresa sem imobilização de capital de giro.
+2. **Manutenção Preventiva e Corretiva Integral:** Substituição periódica de consumíveis de longa duração (unidades fusoras, cilindros fotocondutores e roletes tracionadores) sem custos adicionais de mão de obra ou peças.
+3. **Máquina Backup de Substituição Imediata:** Em casos de falha que exijam manutenção em bancada, uma impressora reserva idêntica ou equivalente é disponibilizada para que a operação da empresa não pare.
+4. **Reposição Automática de Toners:** Logística baseada em estoque local próprio em Passos - MG, prevenindo que a empresa fique sem suprimentos no fechamento contábil ou fiscal.
+5. **Software de Bilhetagem e Controle de Custos:** Relatórios detalhados com cotas por usuário e departamento, permitindo auditoria clara de páginas impressas monocromáticas e coloridas.
+6. **Faturamento Flexível:** Emissão de Nota Fiscal Eletrônica (NF-e) com boleto faturado quinzenal ou mensal para pessoas jurídicas (CNPJ).
+
+---
+
+## 3. Catálogo Detalhado de Produtos e Suprimentos
+
+### Categoria 1: Toners Compatíveis e Originais
+- **Aplicações:** Impressoras laser monocromáticas e coloridas para escritórios de contabilidade, advocacia, clínicas, cartórios e indústrias.
+- **Diferenciais Técnicos:** Cartuchos 100% novos de fábrica (não são recargas), com chip inteligente de última geração para reconhecimento imediato pelo firmware e pó magnético micropulverizado de fusão uniforme.
+- **Rendimento:** Normatizado conforme métricas ISO/IEC 19752 (cobertura de 5%), com rendimentos reais variando entre 1.000 e 25.000 páginas por cartucho.
+- **Economia:** Redução de até 65% no custo por página impressa em comparação com toners originais de balcão.
+- **Modelos Populares em Estoque:** HP 105A / W1105A, Brother TN-1060, Brother TN-2370, Samsung MLT-D111S, Kyocera TK-1175, HP CF217A (17A).
+
+### Categoria 2: Cartuchos Originais e Tintas EcoTank
+- **Aplicações:** Impressoras jato de tinta com tanque de fábrica (EcoTank, Mega Tank, Ink Tank).
+- **Diferenciais Técnicos:** Formulações pigmentadas e corantes de alta pureza química que protegem os micro-injetores da cabeça piezoelétrica contra entupimentos e secagem precoce, além de resistência ao desbotamento por luz ultravioleta.
+- **Embalagens:** Frascos com bico de encaixe inteligente antivazamento.
+- **Modelos Populares:** Epson T544 (Preto, Ciano, Magenta, Amarelo), Canon GI-190, HP GT53 / GT52, Epson T504, Brother BTD60BK.
+
+### Categoria 3: Impressoras Térmicas e Automação Comercial
+- **Aplicações:** Pontos de Venda (PDV), emissão de cupons não fiscais de pedidos (iFood, Anota AI, ERPs comerciais), etiquetas de logística e expedição.
+- **Velocidade:** Velocidades de impressão de até 260 mm/segundo com guilhotina automática de alta durabilidade.
+- **Conectividade:** Portas USB, Ethernet (Rede Local) e Bluetooth.
+- **Modelos em Estoque:** Elgin i9, Elgin i7, Epson TM-T20X, Bematech MP-4200 TH, Zebra ZD220, Xprinter Térmica 80mm.
+
+### Categoria 4: Multifuncionais Corporativas
+- **Aplicações:** Fluxos intensos de digitalização e cópia com alimentador automático duplex (ADF).
+- **Modelos Principais:** Brother DCP-L5652DN, Brother MFC-L6902DW, HP LaserJet Pro M428fdw, Kyocera Ecosys M2040dn.
+
+### Categoria 5: Peças e Componentes Técnicos
+- Cabeças de impressão originais Epson micropiezo (linhas L3150, L3250, L4260).
+- Películas metálicas e de teflon de alta temperatura para fusores HP e Brother.
+- Roletes de tração de alta aderência (pick-up rollers).
+- Almofadas de descarte de tinta com software de reset de contador.
+
+### Categoria 6: Bobinas Térmicas e Papéis Especiais
+- Bobinas térmicas 80mm x 40m, 80mm x 30m e 57mm x 300m em papel térmico original (gramaturas 48g e 55g), sem liberação de pó abrasivo.
+- Papéis fotográficos especiais: Glossy e Matte (180g e 230g) em tamanho A4.
+
+---
+
+## 4. Laboratório Próprio de Assistência Técnica Especializada
+A empresa conta com bancada técnica especializada no centro de Passos - MG:
+- **Desentupimento de Cabeça de Impressão:** Processo com cuba de ultrassom e solventes específicos, atingindo índice de recuperação superior a 95%.
+- **Reset de Contador e Troca de Almofadas:** Substituição de feltros coletores e reprogramação de firmware travado.
+- **Reparo de Fusor:** Solução para barulhos estridentes, páginas amassadas ou pó solto.
+- **Troca de Roletes Tracionadores:** Elimina problemas onde o equipamento patina e não puxa as folhas da bandeja.
+- **Conserto em Nível de Componente Eletrônico:** Recuperação de placas lógicas e fontes de alimentação afetadas por picos de energia.
+- **Garantia Técnica:** Todos os reparos possuem garantia legal de 90 dias em peças e serviços.
+
+---
+
+## 5. Perguntas Frequentes (FAQ Estruturado)
+
+**Pergunta: O toner compatível pode danificar a impressora?**
+*Resposta:* Não. Os toners compatíveis da Mundo das Impressoras são 100% novos de fábrica, importados sob rígidas normas de controle de qualidade (ISO 9001 e ISO/IEC 19752). O pó tem o mesmo ponto de fusão térmica e granulometria do original, garantindo nitidez e protegendo a vida útil do cilindro e da película fusora.
+
+**Pergunta: Como funciona a cobrança no Outsourcing de Impressão?**
+*Resposta:* O cliente não compra as impressoras. Paga-se uma franquia mensal proporcional ao volume estimado de impressões, com valor fixo por página. Todos os toners, manutenções, peças e trocas de impressora em caso de avaria estão 100% cobertos pelo contrato.
+
+**Pergunta: Como solicitar orçamento ou assistência em Passos?**
+*Resposta:* Diretamente pelo WhatsApp oficial (35) 99953-6494. A equipe técnica realiza o atendimento imediato e agenda a coleta no local para clientes de Passos e cidades vizinhas.
+
+**Pergunta: A empresa emite Nota Fiscal e fatura para CNPJ?**
+*Resposta:* Sim. Todas as operações acompanham NF-e com faturamento a prazo via boleto bancário para empresas cadastradas da região.
+
+---
+
+## 6. Avaliações e Prova Social
+A Mundo das Impressoras possui classificação média de **4,8 estrelas no Google Meu Negócio**, com depoimentos auditados de clientes reais de Passos e região destacando agilidade no atendimento presencial, precisão no diagnóstico técnico e economia nos suprimentos.

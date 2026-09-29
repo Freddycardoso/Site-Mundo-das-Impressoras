@@ -1,0 +1,110 @@
+---
+import { MessageCircle, Phone, MapPin } from 'lucide-react';
+import { DISPLAY_PHONE, getWhatsAppLink } from '../utils/whatsapp';
+
+const footerWhatsApp = getWhatsAppLink('Olá, gostaria de falar com a Mundo das Impressoras.');
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-blue-100 bg-[#0a1628] text-slate-400 text-xs">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-28 sm:pb-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+      
+      {/* Brand Col */}
+      <div class="space-y-4 md:col-span-1">
+        <div class="flex items-center">
+          <img 
+            src="/logo.png" 
+            alt="Mundo das Impressoras" 
+            class="h-10 w-auto object-contain drop-shadow-sm"
+            width="160"
+            height="40"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          Especialistas em Outsourcing de Impressão corporativo, suprimentos de alto rendimento e assistência técnica em Passos-MG e região.
+        </p>
+      </div>
+
+      {/* Quick Links */}
+      <div class="space-y-2">
+        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
+          Navegação
+        </div>
+        <ul class="space-y-1.5 text-xs">
+          <li>
+            <a href="#vitrine" class="hover:text-blue-400 transition-colors">
+              Vitrine de Categorias
+            </a>
+          </li>
+          <li>
+            <a href="#outsourcing" class="hover:text-blue-400 transition-colors">
+              Outsourcing de Impressão (B2B)
+            </a>
+          </li>
+          <li>
+            <a href="#servicos" class="hover:text-blue-400 transition-colors">
+              Assistência Técnica e Coleta
+            </a>
+          </li>
+          <li>
+            <a href="#calculadora" class="hover:text-blue-400 transition-colors">
+              Simulador de Economia
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Suprimentos */}
+      <div class="space-y-2">
+        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
+          Principais Linhas
+        </div>
+        <ul class="space-y-1.5 text-xs">
+          <li>Toners Brother, HP, Samsung e Kyocera</li>
+          <li>Tintas EcoTank e MegaTank originais</li>
+          <li>Impressoras Térmicas e Bobinas Cupom</li>
+          <li>Peças, fusores e cabeças de impressão</li>
+        </ul>
+      </div>
+
+      {/* Contact & Location */}
+      <div class="space-y-2.5">
+        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
+          Atendimento Regional
+        </div>
+        <div class="space-y-2 text-xs">
+          <div class="flex items-center gap-2 text-slate-400">
+            <MapPin class="w-3.5 h-3.5 text-blue-400 shrink-0" />
+            <span>Passos - Minas Gerais</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-400">
+            <Phone class="w-3.5 h-3.5 text-blue-400 shrink-0" />
+            <span>WhatsApp: {DISPLAY_PHONE}</span>
+          </div>
+          <a
+            href={footerWhatsApp}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 mt-2 text-blue-400 hover:text-blue-300 font-medium"
+          >
+            <MessageCircle class="w-3.5 h-3.5" />
+            <span>Abrir conversa no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    {/* Legal & Copyright */}
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+      <div>
+        © {currentYear} Mundo das Impressoras. Todos os direitos reservados.
+      </div>
+      <div class="text-center sm:text-right">
+        Atendimento B2B e B2C · Passos e Região · Fotos e marcas registradas pertencem a seus respectivos titulares.
+      </div>
+    </div>
+  </div>
+</footer>
