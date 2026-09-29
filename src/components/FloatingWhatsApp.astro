@@ -1,6 +1,6 @@
 ---
 import { MessageCircle, Zap } from 'lucide-react';
-import { getWhatsAppLink, getOutsourcingWhatsAppLink } from '../utils/whatsapp';
+import { getWhatsAppLink, getOutsourcingWhatsAppLink, DISPLAY_PHONE } from '../utils/whatsapp';
 
 const directWhatsApp = getWhatsAppLink('Olá! Vim pelo site da Mundo das Impressoras e gostaria de atendimento.');
 const mobileWhatsApp = getWhatsAppLink('Olá! Vim pelo site da Mundo das Impressoras e gostaria de cotação.');
@@ -46,7 +46,7 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
       class="flex-1 py-2.5 px-4 bg-[#00875a] active:bg-[#00704a] text-white font-bold text-xs rounded-full flex items-center justify-center gap-2 shadow-sm whitespace-nowrap active:scale-[0.97] transition-all"
     >
       <MessageCircle class="w-4 h-4" />
-      <span>WhatsApp (35) 99953-6494</span>
+      <span>WhatsApp {DISPLAY_PHONE}</span>
     </a>
 
     <a

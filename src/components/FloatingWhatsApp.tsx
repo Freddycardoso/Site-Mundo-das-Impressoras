@@ -42,7 +42,7 @@ export const FloatingWhatsApp: React.FC = () => {
             className="flex-1 py-2.5 px-3 bg-blue-600 active:bg-blue-700 text-white font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 shadow-sm whitespace-nowrap"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>WhatsApp (35) 99953-6494</span>
+            <span>WhatsApp {DISPLAY_PHONE}</span>
           </a>
 
           <a

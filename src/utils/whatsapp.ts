@@ -1,5 +1,5 @@
-export const WHATSAPP_PHONE = '5535999536494';
-export const DISPLAY_PHONE = '(35) 99953-6494';
+export const WHATSAPP_PHONE = '5535998366300';
+export const DISPLAY_PHONE = '(35) 99836-6300';
 export const DISPLAY_LOCATION = 'Passos - MG e Região';
 
 /**

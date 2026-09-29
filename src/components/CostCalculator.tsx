@@ -39,7 +39,7 @@ export const CostCalculator: React.FC = () => {
     ].filter(Boolean).join('\n');
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/5535999536494?text=${encoded}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/5535998366300?text=${encoded}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
