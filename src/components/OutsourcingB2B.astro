@@ -1,43 +1,43 @@
 ---
-import { ArrowRight, Zap, BarChart3, Wrench, RefreshCw } from 'lucide-react';
+import { ArrowRight, Zap, BarChart3, Wrench, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { getOutsourcingWhatsAppLink } from '../utils/whatsapp';
 
 const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
 ---
 
-<section id="outsourcing" class="relative py-28 lg:py-36 bg-[#f8fafc] border-b border-slate-200/60">
+<section id="outsourcing" class="relative py-28 lg:py-36 bg-[#fbfbfa] border-b border-[#0a2540]/[0.06]">
   
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     {/* Section Header */}
     <div class="text-center max-w-3xl mx-auto space-y-3.5">
-      <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-50 px-3.5 py-1 text-[11px] font-semibold tracking-[0.2em] uppercase text-blue-600">
+      <div class="inline-flex items-center gap-2 rounded-full border border-[#0a2540]/[0.08] bg-white px-3.5 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#0a2540] shadow-sm">
         Gestão Corporativa de Impressão (B2B)
       </div>
-      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-[-0.035em] text-slate-900 font-display text-balance">
-        Por que as melhores empresas de Passos e região migraram para o Outsourcing?
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-[-0.035em] text-[#0a2540] font-display text-balance">
+        Por que os diretores financeiros de Passos e região migram para o Outsourcing?
       </h2>
-      <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-        Comprar impressoras imobiliza capital, gera compras desorganizadas de toner e causa
-        paralisação no atendimento quando uma máquina quebra. No Outsourcing Mundo das Impressoras,
-        sua empresa só paga pelas páginas impressas com tudo incluso.
+      <p class="text-sm sm:text-base text-[#425466] leading-relaxed font-normal">
+        Comprar impressoras imobiliza capital de giro, gera despesas variáveis imprevisíveis de manutenção
+        e causa paralisação no faturamento quando uma máquina quebra. No Outsourcing Mundo das Impressoras,
+        sua empresa deduz a locação como despesa operacional (OPEX) e conta com reposição contínua.
       </p>
     </div>
 
-    {/* 4 Pillars Bento Grid with Double-Bezel Architecture */}
+    {/* 4 Pillars Bento Grid with Swiss Double-Bezel Architecture */}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
       
       <div class="double-bezel-outer group transition-all duration-300 hover:-translate-y-1.5 flex flex-col">
         <div class="double-bezel-inner p-7 flex flex-col justify-between space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 rounded-2xl bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.06] flex items-center justify-center text-[#0052cc] shadow-sm transition-transform duration-200 group-hover:scale-105">
             <Zap class="w-6 h-6" />
           </div>
           <div class="space-y-2">
-            <h3 class="text-lg font-bold text-slate-900 font-display">
-              Zero Custo de Aquisição
+            <h3 class="text-lg font-bold text-[#0a2540] font-display">
+              Zero Imobilização de Capital
             </h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Modernize seu parque de impressão imediatamente com equipamentos industriais sem desembolsar capital de giro da empresa.
+            <p class="text-xs sm:text-sm text-[#425466] leading-relaxed font-normal">
+              Modernize seu parque de impressão imediatamente com equipamentos corporativos sem descapitalizar o caixa da empresa.
             </p>
           </div>
         </div>
@@ -45,15 +45,15 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
 
       <div class="double-bezel-outer group transition-all duration-300 hover:-translate-y-1.5 flex flex-col">
         <div class="double-bezel-inner p-7 flex flex-col justify-between space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 rounded-2xl bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.06] flex items-center justify-center text-[#0052cc] shadow-sm transition-transform duration-200 group-hover:scale-105">
             <Wrench class="w-6 h-6" />
           </div>
           <div class="space-y-2">
-            <h3 class="text-lg font-bold text-slate-900 font-display">
+            <h3 class="text-lg font-bold text-[#0a2540] font-display">
               Manutenção Total Inclusa
             </h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Peças, mão de obra, roletes e cabeças de impressão cobertas pelo contrato. Nunca mais receba um orçamento surpresa de oficina.
+            <p class="text-xs sm:text-sm text-[#425466] leading-relaxed font-normal">
+              Peças, mão de obra especializada, roletes e cabeças de impressão cobertas pelo contrato, sem orçamentos surpresa.
             </p>
           </div>
         </div>
@@ -61,15 +61,15 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
 
       <div class="double-bezel-outer group transition-all duration-300 hover:-translate-y-1.5 flex flex-col">
         <div class="double-bezel-inner p-7 flex flex-col justify-between space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 rounded-2xl bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.06] flex items-center justify-center text-[#0052cc] shadow-sm transition-transform duration-200 group-hover:scale-105">
             <RefreshCw class="w-6 h-6" />
           </div>
           <div class="space-y-2">
-            <h3 class="text-lg font-bold text-slate-900 font-display">
-              Máquina Reserva (Backup)
+            <h3 class="text-lg font-bold text-[#0a2540] font-display">
+              Máquina Backup Imediata
             </h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Caso ocorra algum defeito complexo no equipamento, substituímos a máquina imediatamente para manter seu faturamento e atendimento rodando.
+            <p class="text-xs sm:text-sm text-[#425466] leading-relaxed font-normal">
+              Caso ocorra qualquer falha crítica, realizamos a troca imediata do equipamento em Passos para sua operação nunca parar.
             </p>
           </div>
         </div>
@@ -77,15 +77,15 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
 
       <div class="double-bezel-outer group transition-all duration-300 hover:-translate-y-1.5 flex flex-col">
         <div class="double-bezel-inner p-7 flex flex-col justify-between space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <div class="w-12 h-12 rounded-2xl bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.06] flex items-center justify-center text-[#0052cc] shadow-sm transition-transform duration-200 group-hover:scale-105">
             <BarChart3 class="w-6 h-6" />
           </div>
           <div class="space-y-2">
-            <h3 class="text-lg font-bold text-slate-900 font-display">
-              Bilhetagem e Rateio
+            <h3 class="text-lg font-bold text-[#0a2540] font-display">
+              Auditoria de Volume & Rateio
             </h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Tenha relatórios claros de quantas páginas cada departamento ou colaborador imprimiu, eliminando impressões desnecessárias.
+            <p class="text-xs sm:text-sm text-[#425466] leading-relaxed font-normal">
+              Relatórios mensais detalhados por centro de custo e setor, eliminando desperdícios ocultos em papel e toners.
             </p>
           </div>
         </div>
@@ -93,68 +93,71 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
 
     </div>
 
-    {/* Comparison Table with Double-Bezel Enclosure */}
-    <div class="mt-16 rounded-[2rem] p-1.5 bg-slate-200/50 border border-slate-300/40 shadow-xl overflow-hidden">
-      <div class="rounded-[calc(2rem-0.375rem)] bg-white p-7 sm:p-10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)]">
+    {/* Audited Executive Memo: Comparison Table with Swiss Double-Bezel Enclosure */}
+    <div class="mt-16 rounded-[2rem] p-1.5 bg-[#0a2540]/[0.04] border border-[#0a2540]/[0.08] shadow-lg shadow-[#0a2540]/[0.03] overflow-hidden">
+      <div class="rounded-[calc(2rem-0.375rem)] bg-white p-7 sm:p-10 shadow-sm">
         <div class="text-center sm:text-left mb-8 space-y-1.5">
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
-            Comparativo Direto: Comprar vs Outsourcing
+          <div class="text-[11px] font-mono font-semibold text-[#0052cc] uppercase tracking-wider">
+            Auditoria Comparativa de Ativos
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0a2540] font-display">
+            Comprar Parque Próprio vs. Outsourcing Mundo das Impressoras
           </h3>
-          <p class="text-xs sm:text-sm text-slate-600">
-            Veja a diferença prática no fluxo de caixa e no tempo da sua equipe de TI ou administrativo:
+          <p class="text-xs sm:text-sm text-[#425466]">
+            Comparativo financeiro direto no fluxo de caixa e na produtividade operacional:
           </p>
         </div>
 
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs sm:text-sm border-collapse min-w-[550px]">
             <thead>
-              <tr class="border-b border-slate-200/80 text-slate-400 font-mono text-[11px] uppercase tracking-wider">
-                <th class="py-3.5 px-4 font-semibold">Item de Gestão</th>
-                <th class="py-3.5 px-4 font-semibold text-rose-500">Impressora Própria (Comprada)</th>
-                <th class="py-3.5 px-4 font-semibold text-blue-600">Outsourcing Mundo das Impressoras</th>
+              <tr class="border-b border-[#0a2540]/[0.08] text-[#425466] font-mono text-[11px] uppercase tracking-wider">
+                <th class="py-3.5 px-4 font-semibold text-[#0a2540]">Item de Auditoria</th>
+                <th class="py-3.5 px-4 font-semibold text-rose-600">Modelo Antigo (Compra Própria)</th>
+                <th class="py-3.5 px-4 font-semibold text-[#00875a]">Outsourcing Homologado</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-100 text-slate-600">
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Investimento Inicial</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Alto (R$ 3.000 a R$ 20.000+ imobilizados)</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">R$ 0,00 (Sem imobilização)</td>
+            <tbody class="divide-y divide-[#0a2540]/[0.06] text-[#425466]">
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Investimento Inicial (CAPEX)</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Alto (R$ 5.000 a R$ 25.000+ imobilizados)</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">R$ 0,00 (100% como despesa OPEX dedutível)</td>
               </tr>
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Manutenção & Troca de Peças</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Pagas à parte (orçamentos caros e lentos)</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">100% Inclusas sem surpresas</td>
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Manutenção e Troca de Peças</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Orçamentos imprevistos e dias de máquina parada</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">100% Inclusas com peças originais</td>
               </tr>
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Reposição de Toners</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Compras de urgência com frete caro</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">Preventiva e automática em Passos</td>
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Suprimentos e Toners</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Compras picadas, frete avulso e risco de toner falso</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">Reposição preventiva e programada em Passos</td>
               </tr>
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Equipamento Reserva em Quebra</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Não existe (dias com a empresa parada)</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">Substituição rápida imediata</td>
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Substituição em Caso de Quebra</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Inexistente (atendimento suspenso até conserto)</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">Máquina backup imediata garantida em contrato</td>
               </tr>
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Depreciação & Obsolescência</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Prejuízo absorvido pela sua empresa</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">Parque sempre atualizado</td>
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Obsolescência Tecnológica</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Prejuízo patrimonial com desvalorização anual</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">Upgrade periódico garantido sem custo extra</td>
               </tr>
-              <tr class="hover:bg-slate-50/50 transition-colors">
-                <td class="py-4 px-4 font-semibold text-slate-800">Controle de Custos</td>
-                <td class="py-4 px-4 text-rose-500/90 font-medium">Custo fantasma variável imprevisível</td>
-                <td class="py-4 px-4 text-blue-600 font-bold">Previsibilidade total por página impressa</td>
+              <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="py-4 px-4 font-semibold text-[#0a2540]">Previsibilidade Orçamentária</td>
+                <td class="py-4 px-4 text-rose-600 font-medium">Custos variáveis com picos indesejados</td>
+                <td class="py-4 px-4 text-[#00875a] font-bold">Custo fixo por página auditada no final do mês</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         {/* Primary Action Bar with Nested Island CTA Button */}
-        <div class="mt-10 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-5">
+        <div class="mt-10 pt-6 border-t border-[#0a2540]/[0.08] flex flex-col sm:flex-row items-center justify-between gap-5">
           <div class="text-center sm:text-left space-y-0.5">
-            <span class="text-xs font-mono text-blue-600 font-semibold uppercase tracking-wider">Diagnóstico Gratuito</span>
-            <p class="text-sm font-bold text-slate-900">
-              Receba um estudo personalizado de economia sem compromisso.
+            <span class="text-xs font-mono text-[#0052cc] font-semibold uppercase tracking-wider">Estudo Executivo B2B</span>
+            <p class="text-sm font-bold text-[#0a2540]">
+              Receba um diagnóstico corporativo de custos sem compromisso.
             </p>
           </div>
 
@@ -162,11 +165,11 @@ const outsourcingWhatsApp = getOutsourcingWhatsAppLink();
             href={outsourcingWhatsApp}
             target="_blank"
             rel="noopener noreferrer"
-            class="group inline-flex items-center gap-3 pl-7 pr-2.5 py-2 min-h-[50px] text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-full shadow-lg shadow-blue-600/25 transition-all duration-200 active:scale-[0.97] whitespace-nowrap"
+            class="group inline-flex items-center gap-3 pl-7 pr-2.5 py-2.5 min-h-[50px] text-sm font-semibold text-white bg-[#0a2540] hover:bg-[#0052cc] rounded-full shadow-lg shadow-[#0a2540]/20 transition-all duration-200 active:scale-[0.97] whitespace-nowrap"
           >
-            <span>Solicitar Estudo de Redução de Custos</span>
+            <span>Solicitar Estudo para Minha Empresa</span>
             <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5">
-              <ArrowRight class="w-4 h-4" />
+              <ArrowRight class="w-4 h-4 text-white" />
             </div>
           </a>
         </div>

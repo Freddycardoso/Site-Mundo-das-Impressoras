@@ -6,12 +6,12 @@ const footerWhatsApp = getWhatsAppLink('Olá, gostaria de falar com a Mundo das 
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="border-t border-slate-800/80 bg-slate-950 text-slate-400 text-xs relative overflow-hidden">
+<footer class="border-t border-[#0a2540] bg-[#0a2540] text-slate-300 text-xs relative overflow-hidden">
   {/* Ambient background glow */}
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-px bg-gradient-to-r from-transparent via-[#0052cc]/50 to-transparent"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-28 sm:pb-16">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800/70">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
       
       {/* Brand Col */}
       <div class="space-y-4 md:col-span-1">
@@ -19,16 +19,16 @@ const currentYear = new Date().getFullYear();
           <img 
             src="/logo.png" 
             alt="Mundo das Impressoras" 
-            class="h-10 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.06)]"
+            class="h-10 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.1)]"
             width="160"
             height="40"
             loading="lazy"
           />
         </div>
-        <p class="text-xs text-slate-400/90 leading-relaxed font-normal">
+        <p class="text-xs text-slate-300/90 leading-relaxed font-normal">
           Especialistas em Outsourcing corporativo, suprimentos originais e homologados, e assistência técnica certificada para Passos-MG e todo o Sudoeste Mineiro.
         </p>
-        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-[11px] text-slate-300">
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-200">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>Atendimento B2B & Balcão</span>
         </div>
@@ -73,21 +73,21 @@ const currentYear = new Date().getFullYear();
         <div class="text-[13px] font-bold text-white tracking-wide font-sans">
           Linhas Homologadas
         </div>
-        <ul class="space-y-2 text-xs text-slate-400">
+        <ul class="space-y-2 text-xs text-slate-300/80">
           <li class="flex items-center gap-1.5">
-            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            <span class="w-1 h-1 rounded-full bg-[#0052cc]"></span>
             Toners Brother, HP, Samsung e Kyocera
           </li>
           <li class="flex items-center gap-1.5">
-            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            <span class="w-1 h-1 rounded-full bg-[#0052cc]"></span>
             Refis de Tinta Epson EcoTank & Canon MegaTank
           </li>
           <li class="flex items-center gap-1.5">
-            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            <span class="w-1 h-1 rounded-full bg-[#0052cc]"></span>
             Impressoras Não Fiscais & Térmicas de Cupom
           </li>
           <li class="flex items-center gap-1.5">
-            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            <span class="w-1 h-1 rounded-full bg-[#0052cc]"></span>
             Cilindros, Fusores e Cabeças de Impressão
           </li>
         </ul>
@@ -99,11 +99,11 @@ const currentYear = new Date().getFullYear();
           Contato & Localização
         </div>
         <div class="space-y-2.5 text-xs">
-          <div class="flex items-start gap-2.5 text-slate-300">
+          <div class="flex items-start gap-2.5 text-slate-200">
             <MapPin class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
             <span>Passos - MG e Sudoeste Mineiro</span>
           </div>
-          <div class="flex items-center gap-2.5 text-slate-300">
+          <div class="flex items-center gap-2.5 text-slate-200">
             <Phone class="w-4 h-4 text-blue-400 shrink-0" />
             <span class="font-medium text-white">{DISPLAY_PHONE}</span>
           </div>
@@ -112,7 +112,7 @@ const currentYear = new Date().getFullYear();
               href={footerWhatsApp}
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-blue-400 hover:text-blue-300 hover:border-slate-700 transition-all duration-200 text-xs font-semibold group active:scale-[0.97]"
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-white hover:bg-white/20 transition-all duration-200 text-xs font-semibold group active:scale-[0.97]"
             >
               <MessageCircle class="w-4 h-4 text-emerald-400 transition-transform duration-200 group-hover:scale-110" />
               <span>Chamar Consultor Técnico</span>
@@ -124,11 +124,11 @@ const currentYear = new Date().getFullYear();
     </div>
 
     {/* Legal & Copyright */}
-    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
       <div>
         © {currentYear} Mundo das Impressoras. Todos os direitos reservados.
       </div>
-      <div class="text-center sm:text-right text-slate-600">
+      <div class="text-center sm:text-right text-slate-400/80">
         CNPJ e operação em Passos/MG · Imagens meramente ilustrativas · Marcas citadas pertencem aos seus respectivos fabricantes.
       </div>
     </div>

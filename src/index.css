@@ -5,7 +5,14 @@
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    --color-blue-brand: #2563eb;
+
+    /* Swiss Corporate Palette Tokens */
+    --color-base: #fbfbfa;
+    --color-surface: #ffffff;
+    --color-navy: #0a2540;
+    --color-steel: #425466;
+    --color-royal: #0052cc;
+    --color-forest: #00875a;
 
     /* Emil Kowalski & High-End Visual Design Custom Physics Easings */
     --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
@@ -21,8 +28,8 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: #f8fafc;
-    color: #0f172a;
+    background-color: #fbfbfa;
+    color: #0a2540;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -32,62 +39,69 @@
   h1, h2, h3, h4, h5, h6, .font-display {
     font-family: var(--font-display);
     letter-spacing: -0.035em;
-    font-weight: 700;
+    font-weight: 800;
+    color: #0a2540;
   }
 }
 
 /* Tactile button press feedback: Emil's mandate (scale 0.97) */
 button, [role="button"], a.btn-tactile {
-  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), opacity 160ms ease;
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), opacity 160ms ease, box-shadow 200ms ease;
 }
 
 button:active, [role="button"]:active, a.btn-tactile:active {
   transform: scale(0.97);
 }
 
-/* Double-Bezel (Doppelrand) Architecture Classes */
+/* Swiss Double-Bezel (Doppelrand) Architecture: Diffusion without harsh grey borders */
 .double-bezel-outer {
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   padding: 0.375rem;
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 20px 40px -15px rgba(15, 23, 42, 0.07);
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  transition: transform 400ms cubic-bezier(0.32, 0.72, 0, 1), box-shadow 400ms cubic-bezier(0.32, 0.72, 0, 1), border-color 300ms ease;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    0 1px 2px rgba(10, 37, 64, 0.03),
+    0 8px 20px -4px rgba(10, 37, 64, 0.05),
+    0 24px 48px -12px rgba(10, 37, 64, 0.07);
+  border: 1px solid rgba(10, 37, 64, 0.06);
+  transition: transform 350ms cubic-bezier(0.32, 0.72, 0, 1), box-shadow 350ms cubic-bezier(0.32, 0.72, 0, 1), border-color 250ms ease;
 }
 
 .double-bezel-outer:hover {
-  border-color: rgba(147, 197, 253, 0.8);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 25px 50px -12px rgba(37, 99, 235, 0.12);
+  border-color: rgba(0, 82, 204, 0.3);
+  box-shadow: 
+    0 2px 4px rgba(10, 37, 64, 0.04),
+    0 14px 28px -4px rgba(10, 37, 64, 0.08),
+    0 32px 64px -12px rgba(0, 82, 204, 0.12);
 }
 
 .double-bezel-inner {
-  border-radius: calc(2rem - 0.375rem);
+  border-radius: calc(1.5rem - 0.375rem);
   background: #ffffff;
-  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 2px rgba(10, 37, 64, 0.02);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* Dark Mode Double-Bezel */
-.double-bezel-dark-outer {
-  position: relative;
-  border-radius: 2rem;
-  padding: 0.375rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
-  transition: transform 400ms cubic-bezier(0.32, 0.72, 0, 1), border-color 300ms ease;
+/* Luminous Glass Cards for Swiss Corporate */
+.swiss-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 
+    0 1px 2px rgba(10, 37, 64, 0.03),
+    0 8px 16px -4px rgba(10, 37, 64, 0.04),
+    0 20px 40px -8px rgba(10, 37, 64, 0.06);
+  border: 1px solid rgba(10, 37, 64, 0.05);
+  transition: transform 300ms cubic-bezier(0.32, 0.72, 0, 1), box-shadow 300ms ease;
 }
 
-.double-bezel-dark-inner {
-  border-radius: calc(2rem - 0.375rem);
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+.swiss-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 2px 4px rgba(10, 37, 64, 0.04),
+    0 12px 24px -4px rgba(10, 37, 64, 0.07),
+    0 28px 56px -8px rgba(10, 37, 64, 0.09);
 }
 
 /* Touch device protection for hover states */
@@ -128,7 +142,7 @@ button:active, [role="button"]:active, a.btn-tactile:active {
 }
 
 /* =========================================
-   DYNAMIC MESH GRADIENT (HERO BACKGROUND)
+   LUMINOUS SWISS CORPORATE HERO CANVAS
    ========================================= */
 
 @keyframes mesh-blob-1 {
@@ -136,10 +150,10 @@ button:active, [role="button"]:active, a.btn-tactile:active {
     transform: translate(0, 0) scale(1);
   }
   33% {
-    transform: translate(5%, 15%) scale(1.1);
+    transform: translate(4%, 10%) scale(1.08);
   }
   66% {
-    transform: translate(-10%, 10%) scale(0.9);
+    transform: translate(-8%, 6%) scale(0.95);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -151,10 +165,10 @@ button:active, [role="button"]:active, a.btn-tactile:active {
     transform: translate(0, 0) scale(1);
   }
   33% {
-    transform: translate(-15%, -10%) scale(1.2);
+    transform: translate(-10%, -6%) scale(1.1);
   }
   66% {
-    transform: translate(10%, -20%) scale(0.85);
+    transform: translate(8%, -12%) scale(0.9);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -162,37 +176,42 @@ button:active, [role="button"]:active, a.btn-tactile:active {
 }
 
 .mesh-container {
-  background-color: #0f172a; /* Fundo base escuro */
+  background-color: #fbfbfa; /* Alabastro nobre corporativo */
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -15%, rgba(0, 82, 204, 0.08), rgba(251, 251, 250, 0)),
+    linear-gradient(to right, rgba(10, 37, 64, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 37, 64, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 3rem 3rem, 3rem 3rem;
 }
 
 .mesh-blob-1, .mesh-blob-2 {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   z-index: 0;
   will-change: transform;
-  opacity: 0.35;
+  opacity: 0.45;
+  pointer-events: none;
 }
 
 .mesh-blob-1 {
-  background-color: #1e3a8a; /* Ponto de luz 1 (Blue 900 sutil) */
-  width: 60vw;
-  height: 60vw;
-  top: -10%;
-  left: -10%;
-  animation: mesh-blob-1 18s infinite alternate ease-in-out;
+  background-color: rgba(0, 82, 204, 0.12); /* Royal Blue sutil */
+  width: 50vw;
+  height: 50vw;
+  top: -15%;
+  left: -5%;
+  animation: mesh-blob-1 22s infinite alternate ease-in-out;
 }
 
 .mesh-blob-2 {
-  background-color: #0891b2; /* Ponto de luz 2 (Cyan 600 tech) */
-  width: 50vw;
-  height: 50vw;
-  bottom: -20%;
-  right: -10%;
-  animation: mesh-blob-2 20s infinite alternate ease-in-out;
+  background-color: rgba(14, 165, 233, 0.1); /* Sky blue suave */
+  width: 45vw;
+  height: 45vw;
+  bottom: -15%;
+  right: -5%;
+  animation: mesh-blob-2 25s infinite alternate ease-in-out;
 }
 
 .mesh-content {
