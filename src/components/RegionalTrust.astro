@@ -6,99 +6,106 @@ import { DISPLAY_PHONE, getWhatsAppLink } from '../utils/whatsapp';
 const regionalWhatsApp = getWhatsAppLink('Olá! Gostaria de consultar se vocês atendem meu endereço na região de Passos-MG.');
 ---
 
-<section id="localizacao" class="relative py-24 bg-slate-900">
+<section id="localizacao" class="relative py-28 lg:py-36 bg-slate-950 border-b border-white/10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     {/* Main Grid */}
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       
       {/* Left: Authority statement */}
-      <div class="lg:col-span-6 space-y-6">
-        <div class="space-y-2">
-          <div class="text-xs font-mono text-blue-600 font-semibold tracking-wider uppercase">
+      <div class="lg:col-span-6 space-y-7">
+        <div class="space-y-3.5">
+          <div class="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-3.5 py-1 text-[11px] font-semibold tracking-[0.2em] uppercase text-blue-400">
             Presença e Atendimento Local
           </div>
-          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-50 font-display text-balance">
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-[-0.035em] text-white font-display text-balance">
             A segurança de comprar e contratar com quem está em Passos - MG.
           </h2>
-          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
             Chega de comprar cartucho ou toner na internet e esperar semanas pelo frete dos Correios,
             ou ficar desamparado quando a impressora trava no fechamento do mês.
           </p>
         </div>
 
-        {/* Differential Points */}
-        <div class="space-y-3.5 text-xs sm:text-sm text-slate-300">
-          <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-white/10 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
-              <Clock class="w-3.5 h-3.5" />
+        {/* Differential Points in Sleek Cards */}
+        <div class="space-y-3 text-xs sm:text-sm text-slate-300">
+          <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+            <div class="w-8 h-8 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
+              <Clock class="w-4 h-4" />
             </div>
             <div>
-              <strong class="text-slate-50">Entrega Expressa no Mesmo Dia em Passos:</strong> Se o toner da sua empresa acabou, levamos até você rapidamente.
+              <strong class="text-white block font-semibold text-sm mb-0.5">Entrega Expressa no Mesmo Dia em Passos</strong>
+              <span class="text-slate-400">Se o toner da sua empresa acabou, levamos até você rapidamente sem parar sua operação.</span>
             </div>
           </div>
 
-          <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-white/10 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
-              <ShieldCheck class="w-3.5 h-3.5" />
+          <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+            <div class="w-8 h-8 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
+              <ShieldCheck class="w-4 h-4" />
             </div>
             <div>
-              <strong class="text-slate-50">Garantia Imediata de Balcão:</strong> Sem burocracia de logística reversa. Se houver qualquer falha, a troca é realizada na hora.
+              <strong class="text-white block font-semibold text-sm mb-0.5">Garantia Imediata de Balcão</strong>
+              <span class="text-slate-400">Sem burocracia de logística reversa. Se houver qualquer falha, a troca é realizada na hora.</span>
             </div>
           </div>
 
-          <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-white/10 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
-              <FileText class="w-3.5 h-3.5" />
+          <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+            <div class="w-8 h-8 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
+              <FileText class="w-4 h-4" />
             </div>
             <div>
-              <strong class="text-slate-50">Faturamento Facilitado para Empresas:</strong> Emissão de Nota Fiscal Eletrônica e condições de boleto faturado para CNPJ cadastrado.
+              <strong class="text-white block font-semibold text-sm mb-0.5">Faturamento Facilitado para Empresas</strong>
+              <span class="text-slate-400">Emissão de Nota Fiscal Eletrônica e condições de boleto faturado para CNPJ cadastrado.</span>
             </div>
           </div>
         </div>
 
-        {/* Direct Contact Button */}
+        {/* Direct Contact Button with Nested Island CTA */}
         <div class="pt-2">
           <a
             href={regionalWhatsApp}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors shadow-md shadow-blue-600/20"
+            class="group inline-flex items-center gap-3 pl-7 pr-2.5 py-2.5 min-h-[50px] text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-full shadow-lg shadow-blue-600/30 transition-all duration-200 active:scale-[0.97]"
           >
-            <Phone class="w-4 h-4" />
             <span>Falar com Atendimento Regional: {DISPLAY_PHONE}</span>
+            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5">
+              <Phone class="w-4 h-4" />
+            </div>
           </a>
         </div>
       </div>
 
-      {/* Right: Regional Map & Cities Matrix */}
-      <div class="lg:col-span-6 rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 space-y-6 shadow-xl shadow-black/50 backdrop-blur-sm">
-        <div class="flex items-center justify-between pb-4 border-b border-white/10">
-          <div class="flex items-center gap-2">
-            <MapPin class="w-5 h-5 text-blue-400" />
-            <span class="font-bold text-slate-50 text-base font-display">Cidades Atendidas no Sudoeste de Minas</span>
-          </div>
-          <span class="text-[11px] font-mono text-blue-400">Ponto Base: Passos/MG</span>
-        </div>
-
-        <p class="text-xs text-slate-300">
-          Atendemos indústrias, comércio, escolas, escritórios contábeis, órgãos públicos e clientes finais nas seguintes localidades:
-        </p>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-          {REGIONAL_CITIES.map((city) => (
-            <div
-              key={city}
-              class="p-2.5 rounded-lg bg-white/5 border border-white/10 shadow-sm text-xs text-slate-200 flex items-center gap-2 transition-colors hover:bg-white/10"
-            >
-              <CheckCircle2 class="w-3.5 h-3.5 text-blue-400 shrink-0" />
-              <span class="truncate">{city}</span>
+      {/* Right: Regional Map & Cities Matrix with Double-Bezel Hardware Enclosure */}
+      <div class="lg:col-span-6 rounded-[2.5rem] p-2 bg-white/5 border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.5)]">
+        <div class="rounded-[calc(2.5rem-0.5rem)] bg-slate-900/90 backdrop-blur-xl p-6 sm:p-8 space-y-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div class="flex items-center gap-2.5">
+              <MapPin class="w-5 h-5 text-blue-400" />
+              <span class="font-bold text-white text-base font-display">Cidades Atendidas no Sudoeste de Minas</span>
             </div>
-          ))}
-        </div>
+            <span class="text-[11px] font-mono font-semibold text-blue-400">Base: Passos/MG</span>
+          </div>
 
-        <div class="p-4 rounded-xl bg-blue-900/50 border border-blue-500/20 text-xs text-blue-200 leading-relaxed">
-          <span class="font-semibold text-blue-400">Sua cidade não está na lista?</span> Para as demais cidades da região, atendemos exclusivamente empresas sob contrato de Outsourcing de Impressão (B2B). Clientes particulares e serviços avulsos devem trazer o equipamento até nossa loja física em Passos.
+          <p class="text-xs sm:text-sm text-slate-300">
+            Atendemos indústrias, comércio, escolas, escritórios contábeis, órgãos públicos e clientes finais nas seguintes localidades:
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            {REGIONAL_CITIES.map((city) => (
+              <div
+                key={city}
+                class="px-3.5 py-2 rounded-full bg-white/5 border border-white/10 shadow-sm text-xs font-medium text-slate-200 flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/20 active:scale-[0.98]"
+              >
+                <CheckCircle2 class="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <span class="truncate">{city}</span>
+              </div>
+            ))}
+          </div>
+
+          <div class="p-4 rounded-2xl bg-blue-900/40 border border-blue-500/20 text-xs text-blue-200 leading-relaxed">
+            <span class="font-bold text-blue-400">Sua cidade não está na lista?</span> Para as demais cidades da região, atendemos exclusivamente empresas sob contrato de Outsourcing de Impressão (B2B). Clientes particulares e serviços avulsos devem trazer o equipamento até nossa loja física em Passos.
+          </div>
         </div>
       </div>
 

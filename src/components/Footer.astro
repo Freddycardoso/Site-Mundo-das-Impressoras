@@ -6,9 +6,12 @@ const footerWhatsApp = getWhatsAppLink('Olá, gostaria de falar com a Mundo das 
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="border-t border-blue-100 bg-[#0a1628] text-slate-400 text-xs">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-28 sm:pb-12">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+<footer class="border-t border-slate-800/80 bg-slate-950 text-slate-400 text-xs relative overflow-hidden">
+  {/* Ambient background glow */}
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-28 sm:pb-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800/70">
       
       {/* Brand Col */}
       <div class="space-y-4 md:col-span-1">
@@ -16,82 +19,105 @@ const currentYear = new Date().getFullYear();
           <img 
             src="/logo.png" 
             alt="Mundo das Impressoras" 
-            class="h-10 w-auto object-contain drop-shadow-sm"
+            class="h-10 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.06)]"
             width="160"
             height="40"
             loading="lazy"
           />
         </div>
-        <p class="text-xs text-slate-500 leading-relaxed">
-          Especialistas em Outsourcing de Impressão corporativo, suprimentos de alto rendimento e assistência técnica em Passos-MG e região.
+        <p class="text-xs text-slate-400/90 leading-relaxed font-normal">
+          Especialistas em Outsourcing corporativo, suprimentos originais e homologados, e assistência técnica certificada para Passos-MG e todo o Sudoeste Mineiro.
         </p>
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-[11px] text-slate-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Atendimento B2B & Balcão</span>
+        </div>
       </div>
 
       {/* Quick Links */}
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
+      <div class="space-y-3">
+        <div class="text-[13px] font-bold text-white tracking-wide font-sans">
           Navegação
         </div>
-        <ul class="space-y-1.5 text-xs">
+        <ul class="space-y-2 text-xs">
           <li>
-            <a href="#vitrine" class="hover:text-blue-400 transition-colors">
-              Vitrine de Categorias
+            <a href="#vitrine" class="hover:text-white transition-colors duration-200 inline-block active:scale-[0.98]">
+              Vitrine de Equipamentos & Suprimentos
             </a>
           </li>
           <li>
-            <a href="#outsourcing" class="hover:text-blue-400 transition-colors">
+            <a href="#outsourcing" class="hover:text-white transition-colors duration-200 inline-block active:scale-[0.98]">
               Outsourcing de Impressão (B2B)
             </a>
           </li>
           <li>
-            <a href="#servicos" class="hover:text-blue-400 transition-colors">
-              Assistência Técnica e Coleta
+            <a href="#servicos" class="hover:text-white transition-colors duration-200 inline-block active:scale-[0.98]">
+              Assistência Técnica e Coleta Grátis
             </a>
           </li>
           <li>
-            <a href="#calculadora" class="hover:text-blue-400 transition-colors">
-              Simulador de Economia
+            <a href="#calculadora" class="hover:text-white transition-colors duration-200 inline-block active:scale-[0.98]">
+              Simulador de Redução de Custos
+            </a>
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-white transition-colors duration-200 inline-block active:scale-[0.98]">
+              Perguntas Frequentes (FAQ)
             </a>
           </li>
         </ul>
       </div>
 
       {/* Suprimentos */}
-      <div class="space-y-2">
-        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
-          Principais Linhas
+      <div class="space-y-3">
+        <div class="text-[13px] font-bold text-white tracking-wide font-sans">
+          Linhas Homologadas
         </div>
-        <ul class="space-y-1.5 text-xs">
-          <li>Toners Brother, HP, Samsung e Kyocera</li>
-          <li>Tintas EcoTank e MegaTank originais</li>
-          <li>Impressoras Térmicas e Bobinas Cupom</li>
-          <li>Peças, fusores e cabeças de impressão</li>
+        <ul class="space-y-2 text-xs text-slate-400">
+          <li class="flex items-center gap-1.5">
+            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            Toners Brother, HP, Samsung e Kyocera
+          </li>
+          <li class="flex items-center gap-1.5">
+            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            Refis de Tinta Epson EcoTank & Canon MegaTank
+          </li>
+          <li class="flex items-center gap-1.5">
+            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            Impressoras Não Fiscais & Térmicas de Cupom
+          </li>
+          <li class="flex items-center gap-1.5">
+            <span class="w-1 h-1 rounded-full bg-blue-500/60"></span>
+            Cilindros, Fusores e Cabeças de Impressão
+          </li>
         </ul>
       </div>
 
       {/* Contact & Location */}
-      <div class="space-y-2.5">
-        <div class="text-xs font-semibold text-white uppercase tracking-wider font-display">
-          Atendimento Regional
+      <div class="space-y-3">
+        <div class="text-[13px] font-bold text-white tracking-wide font-sans">
+          Contato & Localização
         </div>
-        <div class="space-y-2 text-xs">
-          <div class="flex items-center gap-2 text-slate-400">
-            <MapPin class="w-3.5 h-3.5 text-blue-400 shrink-0" />
-            <span>Passos - Minas Gerais</span>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex items-start gap-2.5 text-slate-300">
+            <MapPin class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+            <span>Passos - MG e Sudoeste Mineiro</span>
           </div>
-          <div class="flex items-center gap-2 text-slate-400">
-            <Phone class="w-3.5 h-3.5 text-blue-400 shrink-0" />
-            <span>WhatsApp: {DISPLAY_PHONE}</span>
+          <div class="flex items-center gap-2.5 text-slate-300">
+            <Phone class="w-4 h-4 text-blue-400 shrink-0" />
+            <span class="font-medium text-white">{DISPLAY_PHONE}</span>
           </div>
-          <a
-            href={footerWhatsApp}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-1.5 mt-2 text-blue-400 hover:text-blue-300 font-medium"
-          >
-            <MessageCircle class="w-3.5 h-3.5" />
-            <span>Abrir conversa no WhatsApp</span>
-          </a>
+          <div class="pt-2">
+            <a
+              href={footerWhatsApp}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-blue-400 hover:text-blue-300 hover:border-slate-700 transition-all duration-200 text-xs font-semibold group active:scale-[0.97]"
+            >
+              <MessageCircle class="w-4 h-4 text-emerald-400 transition-transform duration-200 group-hover:scale-110" />
+              <span>Chamar Consultor Técnico</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -102,8 +128,8 @@ const currentYear = new Date().getFullYear();
       <div>
         © {currentYear} Mundo das Impressoras. Todos os direitos reservados.
       </div>
-      <div class="text-center sm:text-right">
-        Atendimento B2B e B2C · Passos e Região · Fotos e marcas registradas pertencem a seus respectivos titulares.
+      <div class="text-center sm:text-right text-slate-600">
+        CNPJ e operação em Passos/MG · Imagens meramente ilustrativas · Marcas citadas pertencem aos seus respectivos fabricantes.
       </div>
     </div>
   </div>
